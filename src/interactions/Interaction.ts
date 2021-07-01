@@ -1,4 +1,7 @@
 import InteractionType from "./InteractionType";
+import InteractionData from "./CommandInteractionData";
+import GuildMember from "../discord_entities/GuildMember";
+import User from "../discord_entities/User";
 
 export default interface Interaction {
     /** ID of the interaction */
@@ -10,11 +13,8 @@ export default interface Interaction {
     /** The type of interaction */
     type: InteractionType;
 
-    /** The command data payload
-     * @todo Implementar tipo para data
-     * @see https://discord.com/developers/docs/interactions/slash-commands#interaction-object-application-command-interaction-data
-    */
-    data?:object;
+    /** The command data payload */
+    data?:InteractionData;
 
     /** The guild it was sent from */
     guild_id?:string;
@@ -22,17 +22,11 @@ export default interface Interaction {
     /** The channel it was sent from */
     channel_id?:string;
 
-    /** Guild member data for the invoking user, including permissions
-     * @todo Implementar tipo para member
-     * @see https://discord.com/developers/docs/resources/guild#guild-member-object
-    */
-    member?: object;
+    /** Guild member data for the invoking user, including permissions */
+    member?: GuildMember;
 
-    /** User object for the invoking user, if invoked in a DM
-     * @todo Implementar tipo para user
-     * @see https://discord.com/developers/docs/resources/user#user-object
-     */
-    user?:object;
+    /** User object for the invoking user, if invoked in a DM */
+    user?:User;
 
     /** A continuation token for responding to the interaction */
     token:string;

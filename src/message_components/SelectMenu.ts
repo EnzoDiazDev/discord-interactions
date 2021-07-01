@@ -1,4 +1,4 @@
-import ComponentType from "./ComponentType";
+import ComponentType from "../interactions/ComponentType";
 import SelectOption from "./SelectOption";
 
 export default interface SelectMenu {
