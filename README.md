@@ -1,1 +1,1 @@
-Template para proyectos npm
+ The definitive implementation to the Discord API.  The definitive implementation to the Discord API. 
