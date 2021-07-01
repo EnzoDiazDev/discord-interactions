@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
-    "dev": "ts-node ./src/Main.ts"
+    "dev": "ts-node ./src/Main.ts",
+    "dev-watch": "ts-node-dev --respawn --transpile-only ./src/Main.ts"
   },
   "types": "dist/index.d.ts",
   "repository": {
@@ -25,9 +26,9 @@
     "@typescript-eslint/parser": "^4.1.1",
     "eslint": "^7.9.0",
     "eslint-config-prettier": "^6.11.0",
+    "prettier": "^2.3.2",
     "ts-node": "^9.0.0",
+    "ts-node-dev": "^1.1.8",
     "typescript": "^4.0.3"
-  },
-  "dependencies": {
   }
 }
