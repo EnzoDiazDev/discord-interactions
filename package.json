@@ -1,7 +1,7 @@
 {
-  "name": "repo",
+  "name": "discord-interactions",
   "version": "1.0.0",
-  "description": "Template para proyectos npm",
+  "description": "The definitive implementation to the Discord API.",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
@@ -11,14 +11,14 @@
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/enzodiazdev/REPO.git"
+    "url": "git+https://github.com/enzodiazdev/discord-interactions.git"
   },
   "author": "Enzo Diaz",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/enzodiazdev/REPO/issues"
+    "url": "https://github.com/enzodiazdev/discord-interactions/issues"
   },
-  "homepage": "https://github.com/enzodiazdev/REPO#readme",
+  "homepage": "https://github.com/enzodiazdev/discord-interactions#readme",
   "devDependencies": {
     "@types/node": "^14.11.1",
     "@typescript-eslint/eslint-plugin": "^4.1.1",
